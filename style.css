@@ -1,0 +1,434 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    background-color: rgb(9, 84, 149);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+nav a:hover {
+    background-color: red;
+    transform: scale(1.2);
+}
+
+nav a {
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: transform 0.8s;
+}
+
+nav h1, nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+    margin-left: auto;
+    margin-right: 50px;
+}
+
+nav h1 {
+    margin-left: 50px;
+}
+
+main {
+    text-align: center;
+    margin-top: 30px;
+    flex: 1;
+}
+
+footer {
+    background-color: rgb(9, 84, 149);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+/* ===== BERANDA ===== */
+
+main {
+    flex: 1;
+}
+
+/* HERO */
+
+.hero {
+    min-height: 500px;
+    padding: 70px 8%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 50px;
+
+    background: linear-gradient(
+        135deg,
+        #ffffff,
+        #eef7ff
+    );
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.sapaan {
+    color: #0878ff;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    line-height: 1.1;
+    margin: 0 0 20px;
+}
+
+.hero h1 span {
+    color: #0878ff;
+}
+
+.deskripsi {
+    color: #555;
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+
+/* TOMBOL */
+
+.tombol {
+    display: flex;
+    gap: 15px;
+}
+
+.tombol a {
+    text-decoration: none;
+    padding: 13px 22px;
+    border-radius: 8px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.tombol a:first-child {
+    background-color: #0878ff;
+    color: white;
+}
+
+.tombol a:first-child:hover {
+    background-color: #005dcc;
+    transform: translateY(-3px);
+}
+
+.tombol a:last-child {
+    border: 2px solid #0878ff;
+    color: #0878ff;
+}
+
+.tombol a:last-child:hover {
+    background-color: #0878ff;
+    color: white;
+}
+
+
+/* CARD PROFIL */
+
+.hero-card {
+    width: 350px;
+
+    padding: 35px;
+
+    text-align: center;
+
+    background-color: white;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.code-logo {
+    width: 100px;
+    height: 100px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background-color: #0878ff;
+
+    color: white;
+
+    font-size: 30px;
+    font-weight: bold;
+
+    box-shadow: 0 10px 25px rgba(8, 120, 255, 0.3);
+}
+
+.hero-card h2 {
+    margin-bottom: 12px;
+}
+
+.hero-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.status {
+    display: inline-block;
+
+    margin-top: 20px;
+
+    padding: 8px 15px;
+
+    border-radius: 20px;
+
+    background-color: #eaffea;
+    color: #299b35;
+
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+/* OVERVIEW */
+
+.overview {
+    padding: 70px 8%;
+
+    text-align: center;
+
+    background-color: white;
+}
+
+.judul-kecil {
+    color: #0878ff;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+}
+
+.overview h2 {
+    font-size: 32px;
+
+    margin: 8px 0 10px;
+}
+
+.overview-text {
+    color: #666;
+
+    max-width: 600px;
+
+    margin: 0 auto 40px;
+
+    line-height: 1.6;
+}
+
+
+/* CARDS */
+
+.cards {
+    max-width: 1050px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.card {
+    padding: 30px;
+
+    text-align: left;
+
+    background-color: #f7faff;
+
+    border: 1px solid #e1e8f0;
+
+    border-radius: 15px;
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 18px;
+
+    border-radius: 10px;
+
+    background-color: #0878ff;
+
+    color: white;
+
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #666;
+
+    line-height: 1.6;
+}
+
+
+/* HP */
+
+@media (max-width: 800px) {
+
+    .hero {
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 60px 6%;
+    }
+
+    .deskripsi {
+        margin: auto auto 25px;
+    }
+
+    .tombol {
+        justify-content: center;
+    }
+
+    .hero-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+}
+
+/* =========================
+   TENTANG SAYA
+========================= */
+
+.about-page {
+    background: #f4f8ff;
+    min-height: 600px;
+    padding: 60px 8%;
+}
+
+.about-content {
+    max-width: 900px;
+    margin: auto;
+}
+
+.about-header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.about-header p {
+    color: #0878ff;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+}
+
+.about-header h1 {
+    color: #222;
+    font-size: 40px;
+    margin: 0 0 10px;
+}
+
+.about-header span {
+    color: #777;
+}
+
+.about-box {
+    background: white;
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.about-box h2 {
+    color: #0878ff;
+    margin-bottom: 20px;
+}
+
+.about-box p {
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+.about-motivasi {
+    margin-top: 25px;
+    padding: 25px;
+    border-radius: 18px;
+    background: #0878ff;
+    color: white;
+    text-align: center;
+}
+
+.about-motivasi h2 {
+    margin-bottom: 10px;
+}
+
+.about-motivasi p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+.about-pantun {
+    margin-top: 25px;
+    padding: 30px;
+    background: white;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 8px 25px
